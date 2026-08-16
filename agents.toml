@@ -1,0 +1,22 @@
+version = 1
+agents = ["codex", "opencode"]
+
+[trust]
+allow_all = true
+
+[[skills]]
+name = "zero-tech-debt"
+source = "jnsahaj/skills"
+
+[[skills]]
+name = "design-system"
+source = "path:skills/design-system"
+
+[[skills]]
+name = "commit"
+source = "path:skills/commit"
+
+[[mcp]]
+name = "chrome-devtools"
+command = "npx"
+args = ["-y", "chrome-devtools-mcp@latest", "--auto-connect"]
