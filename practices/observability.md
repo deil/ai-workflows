@@ -17,6 +17,7 @@ Use the remaining levels by outcome:
 - `DEBUG`: Anything else that needs to be logged.
 
 
-## Activity signals
+## Security events
 
-- When modelling users and authentication, always capture activity signals: `last_sign_in_at`, `last_active_at`, etc. — these are essential for support, security audits, and churn analysis
+- Make sure all potential security events are logged. These include login attempts, sensitive data requests and configuration changes.
+- When modelling users and authentication, always capture and persist activity signals: `last_sign_in_at`, `last_active_at`, etc. — these are essential for support, security audits, and churn analysis. Reading a snapshot from the database is much faster and easier than scanning logs.
