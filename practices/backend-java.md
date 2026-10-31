@@ -1,3 +1,8 @@
+---
+tags:
+  - java
+---
+
 # Java playbook
 
 Best practices for Java-based backend services.

@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - logging
+---
+
 # Telemetry and observability best practices
 
 ---

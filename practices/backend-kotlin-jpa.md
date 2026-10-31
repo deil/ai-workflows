@@ -1,3 +1,10 @@
+---
+tags:
+  - kotlin
+  - database
+  - jpa
+---
+
 # Kotlin Spring Data and JPA practices
 
 These rules adapt the JetBrains Kotlin JPA guidance.

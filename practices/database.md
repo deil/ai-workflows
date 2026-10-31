@@ -1,3 +1,8 @@
+---
+tags:
+  - database
+---
+
 # Practices for database schema design
 
 ---

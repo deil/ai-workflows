@@ -1,3 +1,8 @@
+---
+tags:
+  - general
+---
+
 # Code style playbook
 
 Language-agnostic best practices for writing code.
