@@ -5,7 +5,7 @@ tags:
 
 # Code style playbook
 
-Language-agnostic best practices for writing code.
+Language-agnostic best practices for writing code and evolving the codebase.
 
 ---
 
@@ -19,6 +19,12 @@ _Opinionated. Not everyone will agree — that's fine._
 - Make things and intent explicit — do not sugar-coat ugly truth behind clever abstractions or roundabout misdirection
 
 Before adding complexity, for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, likelihood, and complexity cost to the user and get their buy-in. Do not silently expand scope for theoretical robustness.
+
+When adding new functionality, understand the intended end state and implement it as if it has been there from Day 1. In other words, for each desired change, make the change easy (warning: this may be hard),  then make the easy change.
+
+Do not mix refactoring (changing code structure) and adding features (changing code behavior) in the same step.
+
+Caching is cope for a slow design. Do not add caches, and consider deleting all existing ones. Instead, redesign it to be faster.
 
 ---
 
